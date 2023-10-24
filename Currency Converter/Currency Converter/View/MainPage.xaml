@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Currency_Converter.MainPage">
+    
+    
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Currency Converter" HorizontalTextAlignment="Center" TextColor="White" FontSize="22"/>
+        </Frame>
+
+        <ScrollView HorizontalOptions="CenterAndExpand">
+            <StackLayout>
+                <Label Text="From:" FontSize="12" Margin="0,20,0,0"/>
+                <Entry Placeholder="AUD $0 " WidthRequest="250" HorizontalOptions="Start" Keyboard="Numeric" Margin="0,0,0,10"/>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="80"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Grid.Row="0" Text="7" BackgroundColor="#626262" TextColor="White" HeightRequest="35"/>
+                    <Button Grid.Column="1" Grid.Row="0" Text="8" BackgroundColor="#626262" TextColor="White" HeightRequest="35"/>
+                    <Button Grid.Column="2" Grid.Row="0" Text="9" BackgroundColor="#626262" TextColor="White" HeightRequest="35"/>
+                    <Button Grid.Column="0" Grid.Row="1" Text="4" BackgroundColor="#626262" TextColor="White" HeightRequest="35"/>
+                    <Button Grid.Column="1" Grid.Row="1" Text="5" BackgroundColor="#626262" TextColor="White" HeightRequest="35"/>
+                    <Button Grid.Column="2" Grid.Row="1" Text="6" BackgroundColor="#626262" TextColor="White" HeightRequest="35"/>
+                    <Button Grid.Column="0" Grid.Row="2" Text="1" BackgroundColor="#626262" TextColor="White" HeightRequest="35"/>
+                    <Button Grid.Column="1" Grid.Row="2" Text="2" BackgroundColor="#626262" TextColor="White" HeightRequest="35"/>
+                    <Button Grid.Column="2" Grid.Row="2" Text="3" BackgroundColor="#626262" TextColor="White" HeightRequest="35"/>
+                    <Button Grid.Column="0" Grid.Row="3" Text="0" BackgroundColor="#626262" TextColor="White" HeightRequest="35"/>
+                    <Button Grid.Column="1" Grid.Row="3" Text="." BackgroundColor="#626262" TextColor="White" HeightRequest="35"/>
+                    <Button Grid.Column="2" Grid.Row="3" Text="C" BackgroundColor="#626262" TextColor="White" HeightRequest="35"/>
+                </Grid>
+
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Start">
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="To:" FontSize="12" Margin="0,40,0,0" HorizontalTextAlignment="Start"/>
+                    </StackLayout>
+
+                </StackLayout>
+                <StackLayout HorizontalOptions="Center" >
+                    <Button Text="Convert" BindingContext="Placeholder" WidthRequest="250" BackgroundColor="#626262" TextColor="White"/>
+                    <Label Text="AUD $" FontSize="Medium" Margin="0,20,0,0" HorizontalTextAlignment="Center"/>
+                    <Label Text="=" HorizontalTextAlignment="Center" FontSize="Medium"/>
+                    <Label Text="BindingListView USD $" HorizontalTextAlignment="Center" FontSize="Medium" WidthRequest="250"/>
+                </StackLayout>
+            </StackLayout>
+                
+
+        </ScrollView>
+    </StackLayout>
+
+</ContentPage>

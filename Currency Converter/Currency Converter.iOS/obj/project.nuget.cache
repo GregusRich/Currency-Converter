@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "2Rjeb2lNTyv+TzAiCX2qAEWstFQV6vgtGaAxXvUGJv1PoZmHaDeY6YCm3p9ToZ5RDicmr9z0JBAYLpDUpYmTAA==",
+  "success": true,
+  "projectFilePath": "E:\\Diploma Advanced Programming\\Advanced Mobile Apps\\Currency Converter\\Currency Converter\\Currency Converter.iOS\\Currency Converter.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\grego\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\grego\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\grego\\.nuget\\packages\\system.objectmodel\\4.3.0\\system.objectmodel.4.3.0.nupkg.sha512",
+    "C:\\Users\\grego\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\grego\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

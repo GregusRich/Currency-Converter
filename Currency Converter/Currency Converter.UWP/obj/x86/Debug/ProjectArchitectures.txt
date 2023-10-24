@@ -1,0 +1,1 @@
+E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter.UWP\Currency Converter.UWP.csproj;x86
