@@ -161,7 +161,7 @@ namespace Currency_Converter.ViewModel
                     double.TryParse(SelectedCurrencyRate, out double rate))
                 {
                     var result = inputValue * rate;
-                    ConvertedValue = $"{result:0.##} {SelectedCurrency}";
+                    ConvertedValue = $"{result:0.##}";
                     Debug.WriteLine($"${EntryValue} USD has been converted to {ConvertedValue}");
                     IsConvertFromCurrencyVisible = true;
                     IsConvertToCurrencyVisible = true;
@@ -169,7 +169,6 @@ namespace Currency_Converter.ViewModel
                 else
                 {
                     // Handle the error:
-                    ConvertedValue = "Please select a currency to convert to.";
                     ConvertedValue = "Please select a currency to convert to.";
                 }
             });
