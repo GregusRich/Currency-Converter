@@ -6,6 +6,7 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
+using System.Net.Http;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
@@ -87,11 +88,6 @@ namespace Currency_Converter.ViewModel
         }
 
 
-        public ICommand NumericButtonCommand { get; private set; } // ICommand for button keypad clicks
-
-        public ICommand ConvertCurrencyCommand { get; private set; } // ICommand for button to convert currency
-
-
         private string _entryValue;
         public string EntryValue
         {
@@ -114,25 +110,6 @@ namespace Currency_Converter.ViewModel
         }
 
 
-        // Handles the button pressed command (Keypad)
-        private void OnNumericButtonPressed(string value)
-        {
-            if (value == "C")
-            {
-                EntryValue = string.Empty;
-                IsConvertFromCurrencyVisible = false;
-            }
-            else
-            {
-                EntryValue += value;
-                if (string.IsNullOrEmpty(EntryValue))
-                {
-                    IsConvertFromCurrencyVisible = false;
-                }
-            }
-        }
-
-
         // Backing field for converting currency
         private string _convertedValue;
         public string ConvertedValue
@@ -147,7 +124,6 @@ namespace Currency_Converter.ViewModel
                 }
             }
         }
-
 
 
         // Initialise MainViewModel with the iCommands
@@ -174,7 +150,16 @@ namespace Currency_Converter.ViewModel
             });
         }
 
+        public ICommand NumericButtonCommand { get; private set; } // ICommand for button keypad clicks
+        public ICommand ConvertCurrencyCommand { get; private set; } // ICommand for button to convert currency
 
+
+
+        /* COMMENTED OUT FOR DEVELOPMENT
+         *
+         * This method is used to read a save JSON file instead of making an API call.
+         *
+         *
         // Fetch the latest currency data from JSON file. First need to load and then deserialise the JSON file objects. 
         public async Task FetchDataAsync()
         {
@@ -196,6 +181,67 @@ namespace Currency_Converter.ViewModel
                 AvailableCurrencies.Add(rate.Key);
             }
         }
+        */
+
+
+        // Fetch the latest currency data from the API. This has been tested and returns up to date currencies. First need to load and then deserialise the JSON file objects. 
+        public async Task FetchDataAsync()
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                try
+                {
+                    var response = await client.GetStringAsync("https://openexchangerates.org/api/latest.json?app_id=f3ef28819b2f4f9db32689bfd7869ca6");
+                    _currencyData = JsonConvert.DeserializeObject<CurrencyData>(response);
+
+                    // Clear previous data
+                    AvailableCurrencies.Clear();
+
+                    foreach (var rate in _currencyData.Rates) // Adds rates to the AvailableCurrencies observable collection.
+                    {
+                        AvailableCurrencies.Add(rate.Key);
+                    }
+                }
+                catch (HttpRequestException httpEx)
+                {
+                    // Handle connectivity or network related issues
+                    Debug.WriteLine("Network error: " + httpEx.Message);
+                    await Application.Current.MainPage.DisplayAlert("Error", "Network error occurred. Please check your internet connection.", "OK");
+                }
+                catch (JsonException jsonEx)
+                {
+                    // Handle issues related to JSON deserialisation
+                    Debug.WriteLine("JSON error: " + jsonEx.Message);
+                    await Application.Current.MainPage.DisplayAlert("Error", "Error processing data. Please try again later.", "OK");
+                }
+                catch (Exception ex)
+                {
+                    // General exception errors
+                    Debug.WriteLine("General error: " + ex.Message);
+                    await Application.Current.MainPage.DisplayAlert("Error", "An error occurred. Please try again.", "OK");
+                }
+            }
+        }
+
+
+        // Handles the button pressed command (Keypad)
+        private void OnNumericButtonPressed(string value)
+        {
+            if (value == "C")
+            {
+                EntryValue = string.Empty;
+                IsConvertFromCurrencyVisible = false;
+            }
+            else
+            {
+                EntryValue += value;
+                if (string.IsNullOrEmpty(EntryValue))
+                {
+                    IsConvertFromCurrencyVisible = false;
+                }
+            }
+        }
+
 
         // INotifyPropertyChanged implementation
         public event PropertyChangedEventHandler PropertyChanged;
