@@ -162,13 +162,14 @@ namespace Currency_Converter.ViewModel
                 {
                     var result = inputValue * rate;
                     ConvertedValue = $"{result:0.##} {SelectedCurrency}";
-                    Debug.WriteLine($"${EntryValue} AUD has been converted to {ConvertedValue}");
+                    Debug.WriteLine($"${EntryValue} USD has been converted to {ConvertedValue}");
                     IsConvertFromCurrencyVisible = true;
                     IsConvertToCurrencyVisible = true;
                 }
                 else
                 {
                     // Handle the error:
+                    ConvertedValue = "Please select a currency to convert to.";
                     ConvertedValue = "Please select a currency to convert to.";
                 }
             });
