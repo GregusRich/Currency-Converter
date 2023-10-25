@@ -1,5 +1,5 @@
 # Currency-Converter
-A mobile app prototype that converts AUD to other currencies. This is using an API call for live exchange rates. 
+A mobile app prototype that converts USD to other currencies. This is using an API call for live exchange rates. 
 
 
 ## Currency Converter Mobile App
