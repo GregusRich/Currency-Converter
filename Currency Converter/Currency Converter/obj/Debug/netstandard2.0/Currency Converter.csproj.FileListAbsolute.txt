@@ -5,6 +5,7 @@ E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency
 E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter\obj\Debug\netstandard2.0\Currency Converter.csproj.AssemblyReference.cache
 E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter\obj\Debug\netstandard2.0\Currency Converter.GeneratedMSBuildEditorConfig.editorconfig
 E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter\obj\Debug\netstandard2.0\View\MainPage.xaml.g.cs
 E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter\obj\Debug\netstandard2.0\Currency Converter.AssemblyInfoInputs.cache
 E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter\obj\Debug\netstandard2.0\Currency Converter.AssemblyInfo.cs
 E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter\obj\Debug\netstandard2.0\Currency Converter.csproj.CoreCompileInputs.cache
@@ -12,4 +13,3 @@ E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency
 E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter\obj\Debug\netstandard2.0\Currency Converter.dll
 E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter\obj\Debug\netstandard2.0\refint\Currency Converter.dll
 E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter\obj\Debug\netstandard2.0\Currency Converter.pdb
-E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter\obj\Debug\netstandard2.0\View\MainPage.xaml.g.cs

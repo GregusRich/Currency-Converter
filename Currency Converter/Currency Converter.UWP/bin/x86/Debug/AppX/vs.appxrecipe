@@ -30,13 +30,13 @@
     <AppXManifest Include="E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-10-24T04:35:26.786</Modified>
+      <Modified>2023-10-25T08:41:07.450</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter.UWP\bin\x86\Debug\Currency Converter.UWP.exe">
       <PackagePath>entrypoint\Currency Converter.UWP.exe</PackagePath>
-      <Modified>2023-10-24T04:35:25.730</Modified>
+      <Modified>2023-10-25T07:59:37.703</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\grego\.nuget\packages\newtonsoft.json\13.0.3\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -72,7 +72,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter\bin\Debug\netstandard2.0\Currency Converter.dll">
       <PackagePath>Currency Converter.dll</PackagePath>
-      <Modified>2023-10-24T04:35:22.485</Modified>
+      <Modified>2023-10-25T08:41:04.072</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\grego\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -231,11 +231,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2023-10-24T04:35:25.690</Modified>
+      <Modified>2023-10-25T08:41:06.853</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2023-10-24T04:35:25.691</Modified>
+      <Modified>2023-10-25T08:41:06.854</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.22000.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -251,11 +251,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-10-17T08:02:51.571</Modified>
+      <Modified>2023-10-24T06:05:47.844</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter.UWP\bin\x86\Debug\Core\Currency Converter.UWP.exe">
       <PackagePath>Currency Converter.UWP.exe</PackagePath>
-      <Modified>2023-10-24T04:35:26.781</Modified>
+      <Modified>2023-10-25T08:41:07.446</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

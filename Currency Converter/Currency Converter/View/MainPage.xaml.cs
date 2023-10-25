@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Currency_Converter.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -13,6 +14,17 @@ namespace Currency_Converter
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+
+            var viewModel = BindingContext as MainViewModel;
+            if (viewModel != null)
+            {
+                await viewModel.FetchDataAsync();
+            }
         }
     }
 }

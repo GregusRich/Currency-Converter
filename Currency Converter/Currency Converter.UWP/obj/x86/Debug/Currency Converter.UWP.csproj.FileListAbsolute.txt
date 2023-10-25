@@ -9,6 +9,7 @@ E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency
 E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter.UWP\bin\x86\Debug\Core\AppxManifest.xml
 E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter.UWP\bin\x86\Debug\Core\Currency Converter.UWP.exe
 E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter.UWP\bin\x86\Debug\Currency Converter.UWP.build.appxrecipe
+E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter.UWP\bin\x86\Debug\Newtonsoft.Json.dll
 E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter.UWP\bin\x86\Debug\System.Runtime.dll
 E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter.UWP\bin\x86\Debug\Microsoft.Graphics.Canvas.dll
 E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter.UWP\bin\x86\Debug\Microsoft.Graphics.Canvas.winmd
@@ -61,4 +62,3 @@ E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency
 E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter.UWP\obj\x86\Debug\ProjectArchitectures.txt
 E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter.UWP\obj\x86\Debug\.winmd_cache\$Microsoft.Graphics.Canvas.winmd_636160715180000000.json
 E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter.UWP\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637934734560000000.json
-E:\Diploma Advanced Programming\Advanced Mobile Apps\Currency Converter\Currency Converter\Currency Converter.UWP\bin\x86\Debug\Newtonsoft.Json.dll

@@ -9,7 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Currency Converter.Android"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Currency Converter.iOS", "Currency Converter\Currency Converter.iOS\Currency Converter.iOS.csproj", "{244917E8-382A-46F7-A6E7-FDFCAB5BC021}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Currency Converter", "Currency Converter\Currency Converter\Currency Converter.csproj", "{6CFCCA20-2FBE-4EA9-AFAE-012DFADFADFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Currency Converter", "Currency Converter\Currency Converter\Currency Converter.csproj", "{6CFCCA20-2FBE-4EA9-AFAE-012DFADFADFF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{A54DD406-18BD-42FE-B4AD-7044FA7FDE71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
